@@ -1,0 +1,17 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+SetEnv DB_NAME forex_db
+SetEnv DB_USER root
+SetEnv DB_PASSWORD root
+SetEnv DB_HOST 127.0.0.1
+
+# END WordPress
