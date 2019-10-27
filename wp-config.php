@@ -1,5 +1,5 @@
 <?php
-	include './helpers.php';
+	include 'helpers.php';
 
 /**
  * The base configuration for WordPress
